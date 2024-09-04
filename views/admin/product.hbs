@@ -3,8 +3,8 @@
 
 
 <div>
-  <label > CatagoryName:</label>
-  <select name="cata" >
+  <label > Catagory:</label>
+  <select name="catagory" >
     <option> select</option>
     {{#each result}}
   
@@ -15,8 +15,8 @@
 
 
 <div>
-  <label> SubcatagoryName:</label>
-  <select name="subcata" >
+    <label>Subcatagory:</label>
+  <select name="subcatagory" >
     <option> select</option>
     {{#each data}}
   
@@ -25,25 +25,25 @@
 </div>
 </select>
 <div>
-  <label >productName</label>
+  <label >Product Name</label>
   <input type="text" name="productName" id="productName">
 </div>
 
 
 <div>
-  <label >ProductDiscription:</label>
+  <label >Product Discription:</label>
   <textarea name="ProductDiscription" id="ProductDiscription"></textarea>
 </div>
 
 
 <div>
-  <label >productprice:</label>
-  <input type="text" name="productprice" id="productprice">
+  <label >Product Price:</label>
+  <input type="text" name="ProductPrice" id="ProductPrice">
 </div>
 
 
 <div>
-  <label >productimage:</label>
+  <label >Product Image:</label>
   <input type="file" name="productimage" value="{{subresult.image}}">
   <img src="/images/{{subresult.productimage}}" width="200px" height="100px" alt="">
 </div>
@@ -54,7 +54,7 @@
 </div>
 
 <div>
-  <button type="view"><a href="/admin/produtable">view</a></button>
+  <button type="view"><a href="/admin/product_table">view</a></button>
 
 </div>
 
