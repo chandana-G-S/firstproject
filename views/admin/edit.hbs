@@ -1,0 +1,20 @@
+<h4>catagory</h4>
+<center>
+<form method="post" action="" style=" border:1px solid rgb(117, 117, 200);padding:10px;width:400px" enctype="multipart/form-data">
+
+    <label>catagory:</label>
+    <input type="text" name="catagory" value="{{result.catagory}}" ><br><br>
+
+
+    <label>image:</label>
+    <input type="file" name="image" value="{{result.image}}" >
+    <img src="/images/{{result.image}}" width="200px"  height="100px" alt="">
+    <br><br>
+    
+    <label>discription:</label>
+    <textarea name="discription" >{{result.discription}} </textarea>
+    <br><br>
+  
+    <button type="submit">submit</button>
+</form><br><br>
+</center>

@@ -1,0 +1,40 @@
+<center>
+<form method="post" action="" style=" border:5px solid rgb(11, 11, 13);padding:10px;width:400px" >
+
+
+  <div>
+  <label > catagories</label>
+  <select name="catnames" id="catnames">
+    <option >select</option>
+  
+    {{#each results}}
+      <option value="{{this._id}}">{{this.catagory}}</option>
+      {{/each}}
+      <input type="hidden" value="{{resu.catagories}}" id="hideuser">
+  </select>
+ 
+</div>
+
+<div>
+  <label for="subcatagories"> subcatagories</label>
+  <input type="text" name="subcatagories" id="subcatagories" value="{{resu.subcatagories}}">
+</div>
+
+<div>
+  <button type="submit">submit </button>
+  </div>
+
+</form>
+</center>
+<script>
+   var chand=document.getElementById('catnames')
+    var hide=document.getElementById('hideuser').value
+    for(var i=0;i<chand.options.length;i++){
+        var op=chand.options[i];
+           if(op.value==hide){
+              op.selected=true;
+              break;
+           }
+        }
+    
+</script>
